@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.win8_user.fruitnum.Main2Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="95dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="挑戰者"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/name"
+                    android:gravity="center"
+                    android:textSize="36sp"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/play"
+                android:id="@+id/game"
+                android:background="@color/light_yellow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="254dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="開始遊戲後系統自動計時，直到答題正確，每個關卡都有設不同的標準時間，若在標準時間內答對，可獲得金幣。 金幣的使用時機是在關卡解題當中，可用金幣兌換該題的一個數字，使玩家在破關時可以派上用場。 而在各關卡當中玩家可達到標準時間的門檻來獲得不同水果，讓玩家自行決定要用哪兩種水果代表位置正確以及數字正確。"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
